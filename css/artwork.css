@@ -1,0 +1,30 @@
+.naviMenu:nth-of-type(5)
+{
+    box-shadow: 0 4px rgba(255, 255, 255, 1);
+    border-radius: 0px;
+    background: linear-gradient(to bottom,rgb(170, 220, 248), rgba(236, 236, 236, 0.6));
+}
+.profile
+{
+    position: absolute;
+    border-radius: 50%;
+    height: 16vw;
+    width: 16vw;
+    /* background-color: rgb(152, 210, 243); */
+    /* opacity: 0.8; */
+    border: 2px solid white;
+    top:20%
+}
+
+.profile:nth-of-type(1)
+{
+    left: 17%;
+    background-image: url("../img/husbando.png");
+    background-size: cover;
+}
+.profile:nth-of-type(2)
+{
+    right: 17%;
+    background-image: url("../img/wifey.png");
+    background-size: contain;
+}
