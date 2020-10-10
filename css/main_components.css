@@ -58,3 +58,12 @@ body
 .naviMenu:nth-of-type(3){left: 24%;} 
 .naviMenu:nth-of-type(4){left: 32%;} 
 .naviMenu:nth-of-type(5){left: 40%;} 
+
+.naviLink
+{
+    text-decoration: none;
+    padding: 10% 25%;
+}
+/* .naviLink:hover{background-color: cyan;} */
+.naviLink:link{color: white;}
+.naviLink:visited{color: white;}
