@@ -1,4 +1,4 @@
-html{overflow-x: hidden;}
+html{overflow: hidden;}
 body
 {
     background-color: rgb(0,18,24);
@@ -43,14 +43,12 @@ body
     height: 50%;
     width: 9.9%;
     min-width: 1rem;
-    /* background-color: rgb(152, 210, 243); */
     background: transparent;
     border: none;
     outline: none;
     color: white;
     font-size: 0.7em;
     top: 50%;
-    /* transition: 0.2s; */
 }
 
 .naviMenu:first-of-type{left: 8%;}
@@ -64,6 +62,6 @@ body
     text-decoration: none;
     padding: 10% 25%;
 }
-/* .naviLink:hover{background-color: cyan;} */
+
 .naviLink:link{color: white;}
 .naviLink:visited{color: white;}
