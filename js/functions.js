@@ -38,4 +38,16 @@ function introButtonClick()
 
     var introButton = document.getElementsByClassName("naviMenu")[1];
     introButton.appendChild(linkToIntro);
+
+    introSlideUp();
+}
+
+function introSlideUp()
+{
+    introDetails = document.getElementsByClassName("details");
+    introDetails[0].style.transition = "0.5s";
+    introDetails[0].style.top = "20%";
+
+    introDetails[1].style.transition = "0.5s";
+    introDetails[1].style.top = "20%";
 }
