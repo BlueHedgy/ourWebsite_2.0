@@ -2,6 +2,7 @@ function pageInit()
 {
     artButtonClick();
     homeButtonClick();
+    introButtonClick();
 }
 
 function artButtonClick()
@@ -25,4 +26,16 @@ function homeButtonClick()
 
     var homeButton = document.getElementsByClassName("naviMenu")[0];
     homeButton.appendChild(linkToHome);
+}
+
+
+function introButtonClick()
+{
+    var linkToIntro = document.createElement("a");
+    linkToIntro.setAttribute("class", "naviLink");
+    linkToIntro.href = "Introduction.html";
+    linkToIntro.innerHTML = "INTRODUCTION";
+
+    var introButton = document.getElementsByClassName("naviMenu")[1];
+    introButton.appendChild(linkToIntro);
 }
