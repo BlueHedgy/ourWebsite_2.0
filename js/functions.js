@@ -45,9 +45,36 @@ function introButtonClick()
 function introSlideUp()
 {
     introDetails = document.getElementsByClassName("details");
-    introDetails[0].style.transition = "0.5s";
+    introDetails[0].style.transition = "0.6s ease-out";
     introDetails[0].style.top = "20%";
 
-    introDetails[1].style.transition = "0.5s";
+    introDetails[1].style.transition = "0.6s ease-out";
     introDetails[1].style.top = "20%";
+    
+    
+    setTimeout(dropDescribe, 500);
+    setTimeout(dropBirthday, 600);
 }
+
+function dropDescribe()
+{
+    var selfDescribe = document.getElementsByClassName("selfDescription");
+    selfDescribe[1].style.right = "0";
+    selfDescribe[0].style.transition = "0.5s ease";
+    selfDescribe[1].style.transition = "0.5s ease";
+
+    selfDescribe[0].style.width = "80%";
+    selfDescribe[1].style.width = "80%";
+    selfDescribe[1].style.marginLeft = "0";
+}
+
+function dropBirthday()
+{
+    var birthdayInfo = document.getElementsByClassName("birthday");
+    birthdayInfo[0].style.transition = "0.5s ease";
+    birthdayInfo[1].style.transition = "0.5s ease";
+
+    birthdayInfo[0].style.width = "80%";
+    birthdayInfo[1].style.width = "80%";
+    birthdayInfo[1].style.marginLeft = "0";
+}   
