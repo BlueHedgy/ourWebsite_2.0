@@ -52,11 +52,11 @@ function introSlideUp()
     introDetails[1].style.top = "20%";
     
     
-    setTimeout(dropDescribe, 500);
-    setTimeout(dropBirthday, 600);
+    setTimeout(slideDescribe, 500);
+    setTimeout(slideBirthday, 600);
 }
 
-function dropDescribe()
+function slideDescribe()
 {
     var selfDescribe = document.getElementsByClassName("selfDescription");
     selfDescribe[1].style.right = "0";
@@ -68,7 +68,7 @@ function dropDescribe()
     selfDescribe[1].style.marginLeft = "0";
 }
 
-function dropBirthday()
+function slideBirthday()
 {
     var birthdayInfo = document.getElementsByClassName("birthday");
     birthdayInfo[0].style.transition = "0.5s ease";
