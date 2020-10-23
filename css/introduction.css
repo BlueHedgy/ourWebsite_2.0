@@ -8,72 +8,124 @@
 .details
 {
     position: absolute;
-    width: 27%;
+    width: 35%;
     height: 15%;
-    top: 100%;
-    opacity: 0.8;
+    top: 90%;
+    opacity: 0;
     box-shadow: 0 2px rgb(255, 255, 255);
-    border-radius: 0;
+    border-radius: 5px 5px 0 0;
 }
 
 #infoTess
 {
     background-color: rgba(248, 245, 73, 0.876);
-    left: 10%; 
+    left: 7.5%; 
 }
 
 #infoHung
 {
-    right: 10%;
+    right: 7.5%;
     background-color: rgba(152, 210, 243, 0.856);
 }
 
 .avatar
 {
     position: absolute;
-    width: 80px;
-    height: 80px;
-    top: -40px;
+    width: 100px;
+    height: 100px;
+    top: -50px;
     background-color: rgb(152, 210, 243);
     border-radius: 50%;
     border: 1px solid white;
-    opacity: 0.7;
+    /* opacity: 0.7; */
+    background-size: cover;
 }
 
-#iconTess{left: 5%; background-color: yellow;}
+#iconTess
+{
+    left: 5%;
+    /* background-color: yellow; */
+    background-image: url("../img/wifey.png");
+}
 
 #iconHung
 {
-    right: 5%;
+    right: 5%; 
+    background-image: url("../img/husbando.png");
 }
 
-.selfDescription
+.introEntry
 {
     position: absolute;
     width: 0;
-    height: 35%;
-    background-color: green;
-    top: 102.5%;
-    left: 10%;
-    box-shadow: 0 2px rgb(255, 255, 255);
+    height: 15%;
+    box-shadow: 0 2px rgba(255, 255, 255, 0.678);
+    left: 5%;
+    background: linear-gradient(to bottom,rgb(170, 220, 248), rgb(236, 236, 236));
 }
 
-.birthday
+#selfDesc1, #birthdayTess, #entry3, #entry4
 {
-    position: absolute;
-    width: 0;
-    height: 35%;
-    background-color: red;
-    top: 139.5%;
-    left: 10%;
+    background: linear-gradient(to bottom,rgb(251, 232, 55), rgb(255, 254, 254));
+}
+
+#selfDesc2, #birthdayHung, #entry5, #entry6{margin-left: 90%;}
+
+#selfDesc2, #selfDesc1
+{
+    top: 13%;
+}
+
+#birthdayHung, #birthdayTess
+{
+    top: 33%;
+}
+
+#entry3, #entry5
+{
+    top: 53%;
+}
+
+#entry4, #entry6
+{
+    top: 73%;
 }
 
 .detailsExtend
 {
-    width: 100%;
-    height: 50%;
-    background-color: brown;
+    position: absolute;
+    margin-left: 2.5%;
+    top: 101.5%;
+    width: 95%;
+    height: 0;
+    background-color: rgba(182, 221, 243, 0.7);
+    opacity: 0.9;
+    transition: 0.5s ease-out;
 }
 
-#selfDist2{margin-left: 80%;}
-#birthdayHung{margin-left: 80%;}
+#detailsTess{background-color: rgba(248, 245, 61, 0.7);}
+
+.footerIntro
+{
+    position: absolute;
+    top: 100%;
+    height: 15%;
+    width: 100%;
+    background-color: rgba(182, 221, 243, 1);
+    transition: 0.5s ease-out;
+    border-radius: 0 0 5px 5px;
+}
+
+#footerI{background-color: rgba(248, 245, 61, 0.8)}
+
+
+.generalInfo
+{
+    position: relative;
+    margin: 0;
+    top: 5%;
+    left: 30%;
+    color: white;
+    font: bold;
+    font-size: 21px;
+}
