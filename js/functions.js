@@ -87,6 +87,12 @@ function slideDescribe()
 
 function slideBirthday()
 {
+    
+    setTimeout(function(){
+        var bdayTess = document.getElementById("bdayTess");
+        bdayTess.innerHTML = "24th October";
+    }, 800);
+    
     var birthdayInfo = document.getElementsByClassName("introEntry");
     birthdayInfo[1].style.transition = "0.5s ease";
     birthdayInfo[5].style.transition = "0.5s ease";
@@ -152,4 +158,3 @@ function showPreview()
     var preview = document.getElementById("preview");
     preview.style.opacity = "0.7";
 }
-
