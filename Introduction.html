@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="css/main_components.css">
         <link rel="stylesheet" href="css/introduction.css">
         <script type="text/javascript" src="js/functions.js"></script>
+        <script type="text/javascript" src="js/introduction2.js"></script>
     </head>
 
     <body onload="pageInit()">
@@ -22,10 +23,18 @@
             <div class="avatar" id="iconTess"></div>
 
             <div class="detailsExtend" id="detailsTess">
-                <span class="introEntry" id="selfDesc1"></span>
-                <span class="introEntry" id="birthdayTess"></span>
-                <span class="introEntry" id="entry3"></span>
-                <span class="introEntry" id="entry4"></span>
+                <span class="introEntry" id="selfDesc1">
+                    <p class="introText"></p>
+                </span>
+                <span class="introEntry" id="birthdayTess" onclick="wish()">
+                    <p class="introText" id="bdayTess"></p>
+                </span>
+                <span class="introEntry" id="entry3">
+                    <p class="introText"></p>
+                </span>
+                <span class="introEntry" id="entry4">
+                    <p class="introText"></p>
+                </span>
             </div>
 
             <span class="footerIntro" id="footerI"></span>
@@ -35,14 +44,26 @@
             <div class="avatar" id="iconHung"></div>
 
             <div class="detailsExtend">
-                <span class="introEntry" id="selfDesc2"></span>
-                <span class="introEntry" id="birthdayHung"></span>
-                <span class="introEntry" id="entry5"></span>
-                <span class="introEntry" id="entry6"></span>
+                <span class="introEntry" id="selfDesc2">
+                    <p class="introText"></p>
+                </span>
+                <span class="introEntry" id="birthdayHung">
+                    <p class="introText"></p>
+                </span>
+                <span class="introEntry" id="entry5">
+                    <p class="introText"></p>
+                </span>
+                <span class="introEntry" id="entry6">
+                    <p class="introText"></p>
+                </span>
             </div> 
 
             <span class="footerIntro"></span>
         </div>
+
+
+        <div id="HappyBirthday" onload="HappyBirthdayCounter()"></div>
+        <div id="HPBD_message"></div>
 
     </body>
 </html>
