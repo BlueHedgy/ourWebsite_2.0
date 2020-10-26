@@ -64,6 +64,7 @@
     background: linear-gradient(to bottom,rgb(170, 220, 248), rgb(236, 236, 236));
     text-align: center;
     font-size: 20px;
+    overflow: hidden;
 }
 
 #selfDesc1, #birthdayTess, #entry3, #entry4
@@ -164,5 +165,11 @@
     font-size: 30px;
     top: 60%;
     left: 23%;
+    opacity: 0;
+}
+
+#bdayTess
+{
+    transition: 0.5s ease;
     opacity: 0;
 }
