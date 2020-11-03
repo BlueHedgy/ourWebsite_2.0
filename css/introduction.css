@@ -18,7 +18,7 @@
 
 #infoTess
 {
-    background-color: rgba(248, 245, 73, 0.876);
+    background-color: rgba(248, 214, 61, 0.8);
     left: 7.5%; 
 }
 
@@ -31,15 +31,18 @@
 .avatar
 {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    top: -50px;
+    width: 105px;
+    height: 105px;
+    top: 8px;
     background-color: rgb(152, 210, 243);
     border-radius: 50%;
     border: 1px solid white;
     /* opacity: 0.7; */
     background-size: cover;
+    transition: 0.3s ease;
 }
+
+.avatar:hover{opacity: 0;}
 
 #iconTess
 {
@@ -69,30 +72,18 @@
 
 #selfDesc1, #birthdayTess, #entry3, #entry4
 {
-    background: linear-gradient(to bottom,rgb(251, 232, 55), rgb(255, 254, 254));
+    background: linear-gradient(to bottom,rgba(248, 214, 61, 0.8), rgb(255, 254, 254));
 }
 
 #selfDesc2, #birthdayHung, #entry5, #entry6{margin-left: 90%;}
 
-#selfDesc2, #selfDesc1
-{
-    top: 13%;
-}
+#selfDesc2, #selfDesc1{top: 13%;}
 
-#birthdayHung, #birthdayTess
-{
-    top: 33%;
-}
+#birthdayHung, #birthdayTess{top: 33%;}
 
-#entry3, #entry5
-{
-    top: 53%;
-}
+#entry3, #entry5{top: 53%;}
 
-#entry4, #entry6
-{
-    top: 73%;
-}
+#entry4, #entry6{ top: 73%;}
 
 .detailsExtend
 {
@@ -102,11 +93,10 @@
     width: 95%;
     height: 0;
     background-color: rgba(182, 221, 243, 0.7);
-    opacity: 0.9;
     transition: 0.5s ease-out;
 }
 
-#detailsTess{background-color: rgba(248, 245, 61, 0.7);}
+#detailsTess{background-color:  rgba(248, 214, 61, 0.8);}
 
 .footerIntro
 {
@@ -119,20 +109,39 @@
     border-radius: 0 0 5px 5px;
 }
 
-#footerI{background-color: rgba(248, 245, 61, 0.8)}
+#footerI{background-color: rgba(248, 220, 97, 0.89)}
 
 
 .generalInfo
 {
     position: relative;
     margin: 0;
-    top: 5%;
+    top: 14%;
     left: 30%;
-    color: white;
-    font: bold;
-    font-size: 21px;
+    color: black;
+    /* font: bold; */
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px #46464696
 }
 
+.generalInfo:nth-of-type(2){top: 20%;}
+.generalInfo:nth-of-type(3){top: 26%;}
+
+.generalInfo2
+{
+    position: relative;
+    margin: 0;
+    top: 14%;
+    right: 30%;
+    color: black;
+    /* font: bold; */
+    font-size: 1.2em;
+    text-align: right;
+    text-shadow: 2px 2px 4px #46464696
+}
+
+.generalInfo2:nth-of-type(2){top: 20%;}
+.generalInfo2:nth-of-type(3){top: 26%;}
 
 #HappyBirthday
 {
@@ -140,7 +149,7 @@
     margin: 0;
     /* width: 40%;
     height: 10%; */
-    background: green;
+    background:transparent;
     transform: scale(0);
     transition: 0.8s ease;
     color: white;
@@ -157,7 +166,7 @@
     margin: 0;
     /* width: 60%; */
     /* height: 10%; */
-    background: blue;
+    background: transparent;
     transform: scale(0);
     transition: 0.8s ease;
     color: white;
@@ -170,6 +179,8 @@
 
 #bdayTess
 {
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     opacity: 0;
+    /* background-color: blue; */
 }
+
