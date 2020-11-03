@@ -21,7 +21,7 @@ function homeButtonClick()
 {
     var linkToHome = document.createElement("a");
     linkToHome.setAttribute("class", "naviLink");
-    linkToHome.href = "OurWebsiteV2.html";
+    linkToHome.href = "Mainpage.html";
     linkToHome.innerHTML = "MAIN PAGE";
 
     var homeButton = document.getElementsByClassName("naviMenu")[0];
