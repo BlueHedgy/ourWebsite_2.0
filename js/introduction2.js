@@ -1,6 +1,5 @@
-function wish()
+function bdaywish()
 {
-    // console.log("works");
     setTimeout(fadeoutIntro, 1500)
     setTimeout(collapseInfo, 1000);
     setTimeout(hideDescribe, 800);
@@ -36,6 +35,10 @@ function hideDescribe()
 
 function hideBirthday()
 {
+    var bdayTess = document.getElementById("bdayTess");
+    bdayTess.innerHTML = "Birthday: 24th October";
+    bdayTess.style.opacity = "0";
+
     var birthdayInfo = document.getElementsByClassName("introEntry");
     birthdayInfo[1].style.transition = "0.5s ease";
     birthdayInfo[5].style.transition = "0.5s ease";
@@ -147,7 +150,6 @@ function HPBD_message()
         " day(s), " +  hour_Difference.toString() + " hours and " 
         + minute_Difference.toString() + 
         " minutes left until your birthday :3";
-    }
-     
+    } 
 }
    

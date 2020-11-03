@@ -10,12 +10,20 @@ function introSlideUp()
     introDetails[1].style.transition = "0.8s ease-out";
     introDetails[1].style.top = "20%";
     introDetails[1].style.opacity = "1";
-    
+
+    setTimeout(slideAvatarUp,620);
     setTimeout(revealInfo, 620);
     setTimeout(slideDescribe, 1100);
     setTimeout(slideBirthday, 1300);
     setTimeout(slide3, 1500);
     setTimeout(slide4, 1700);
+}
+
+function slideAvatarUp()
+{
+    var avatar = document.getElementsByClassName("avatar")
+    // avatar[0].style.top = "-52.5px";
+    // avatar[1].style.top = "-52.5px";
 }
 
 function revealInfo()
@@ -43,9 +51,8 @@ function slideDescribe()
 function slideBirthday()
 {
     var bdayTess = document.getElementById("bdayTess");
-    bdayTess.innerHTML = "24th October";
+    bdayTess.innerHTML = "Birthday: 24th October";
     bdayTess.style.opacity = "1";
-    
     
     var birthdayInfo = document.getElementsByClassName("introEntry");
     birthdayInfo[1].style.transition = "0.5s ease";
