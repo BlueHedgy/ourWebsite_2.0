@@ -1,4 +1,4 @@
-.naviMenu:first-of-type
+.naviMenu:nth-of-type(2)
 {
     background: linear-gradient(to bottom,rgb(170, 220, 248), rgba(236, 236, 236, 0.6));
     box-shadow: 0 4px rgba(255, 255, 255, 1);
@@ -8,7 +8,7 @@
 .info_card
 {
     width: 33.33%;
-    height: 35%;
+    height: 295px;
     position: absolute;
     bottom: -30%;
     opacity: 0;
@@ -76,3 +76,9 @@
     color: rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 700px)
+{
+    .info_card{width: 100%;}
+    #info2{left: 100%;}
+    #info3{left: 200%;}
+}
