@@ -7,11 +7,27 @@
         <script type="text/javascript" src="js/functions.js"></script>
         <script type="text/javascript" src="js/introduction1.js"></script>
         <script type="text/javascript" src="js/introduction2.js"></script>
+        <script type="text/javascript" src="js/hamburgerMenu.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Barlow:ital,wght@0,100;0,400;1,300;1,600&display=swap" rel="stylesheet">
+        <!-- <link href="css/hamburgers-master/dist/hamburgers.css" rel="stylesheet"> -->
     </head>
 
     <body onload="pageInit()">
+        <div id="sidebar">
+            <span class="naviMenu2"></span>
+            <span class="naviMenu2"></span>
+            <span class="naviMenu2"></span>
+            <span class="naviMenu2"></span>
+            <span class="naviMenu2"></span>
+        </div>
+        
         <nav id="navi_bar">
+            <button id="hamburger" onclick="burgerAndFries()">
+                <span class="slice" id="topBun"></span>
+                <span class="slice" id="patty"></span>
+                <span class="slice" id="botBun"></span>
+            </button>
+        
             <p id="webname">Blue and Hai</p>
 
             <button class="naviMenu"></button>
@@ -20,6 +36,8 @@
             <button class="naviMenu">MOVIES AND SERIES</button>
             <button class="naviMenu"></button>
         </nav>
+
+        <span id="dim_overlay"></span>
 
         <div class="details" id="infoTess">
             <p class="generalInfo">Tess Guiboud-Ribaud</p>
