@@ -82,7 +82,6 @@ function lessThan700px(x)
 
     if (x.matches)
     {
-        // click == 0;
 
         for (var i=0; i<=4; i++)
         {
@@ -94,11 +93,13 @@ function lessThan700px(x)
         naviBar.style.height = "7%";
         sidebar.style.top = "7%";
         sidebar.style.height = "93%";
+
+        console.log(burgerClick);
     }
     
     else
     {
-        // click += 1;
+        burgerClick = 0;
 
         for (var i=0; i<=4; i++)
         {
@@ -120,5 +121,6 @@ function lessThan700px(x)
         slice[2].style.transform = "rotateZ(0deg)";
         setTimeout(resetBurger, 200);
 
+        console.log(burgerClick);
     }
 }

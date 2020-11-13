@@ -97,14 +97,14 @@ body
 {
     left: 0;
     position: absolute;
-    top: 10%;
+    top: 7%;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.705);
     opacity: 0;
     transition: 0.6s ease-out;
-    height: 90%;
+    height: 93%;
     width: 100%;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 
@@ -204,4 +204,5 @@ body
     }    
 
     .naviLink{opacity: 0;}
+    
 }
