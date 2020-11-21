@@ -1,5 +1,3 @@
-setTimeout(introSlideUp, 150);
-
 function introSlideUp()
 {
     introDetails = document.getElementsByClassName("details");
@@ -11,7 +9,26 @@ function introSlideUp()
     introDetails[1].style.top = "20%";
     introDetails[1].style.opacity = "1";
 
-    setTimeout(slideAvatarUp,620);
+    // setTimeout(slideAvatarUp,620);
+    setTimeout(revealInfo, 620);
+    setTimeout(slideDescribe, 1100);
+    setTimeout(slideBirthday, 1300);
+    setTimeout(slide3, 1500);
+    setTimeout(slide4, 1700);
+}
+
+function introSlideUp2()
+{
+    introDetails = document.getElementsByClassName("details");
+    introDetails[0].style.transition = "0.8s ease-out";
+    introDetails[0].style.top = "20%";
+    introDetails[0].style.opacity = "1";
+
+    introDetails[1].style.transition = "nonew";
+    introDetails[1].style.top = "120%";
+    introDetails[1].style.opacity = "1";
+
+    // setTimeout(slideAvatarUp,620);
     setTimeout(revealInfo, 620);
     setTimeout(slideDescribe, 1100);
     setTimeout(slideBirthday, 1300);

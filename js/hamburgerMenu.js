@@ -81,6 +81,7 @@ function hideSidebar()
     }
 
     setTimeout(function(){
+        fries = document.getElementById("sidebar");
         fries.style.width = "0";
     }, 50);
 }
@@ -93,7 +94,6 @@ function checkSidebarClick()
     {
         overlayClick == 0;
     }
-
     else 
     {
         dimOverLay.onclick = burgerAndFries;

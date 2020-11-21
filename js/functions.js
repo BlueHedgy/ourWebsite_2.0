@@ -1,12 +1,12 @@
 function pageInit()
 {
-    artButtonClick();
-    homeButtonClick();
-    introButtonClick();
-
     var x = window.matchMedia("(max-width: 700px)");
     lessThan700px(x);
     x.addEventListener("change", lessThan700px);
+
+    artButtonClick();
+    homeButtonClick();
+    introButtonClick();
 }
 
 function artButtonClick()
@@ -46,7 +46,7 @@ function homeButtonClick()
     linkToHome2.innerHTML = "MAIN PAGE";
 
     var homeButtonSide = document.getElementsByClassName("naviMenu2")[0];
-    homeButtonSide.appendChild(linkToHome2);
+    homeButtonSide.appendChild(linkToHome2); 
 }
 
 function introButtonClick()
@@ -66,7 +66,7 @@ function introButtonClick()
     linkToIntro2.innerHTML = "INTRODUCTION";
 
     var introButtonSide = document.getElementsByClassName("naviMenu2")[1];
-    introButtonSide.appendChild(linkToIntro2);
+    introButtonSide.appendChild(linkToIntro2);  
 }
 
 var burgerClick = 0;
@@ -82,7 +82,6 @@ function lessThan700px(x)
 
     if (x.matches)
     {
-
         for (var i=0; i<=4; i++)
         {
             naviMenuFull[i].style.visibility ="hidden";
@@ -93,8 +92,7 @@ function lessThan700px(x)
         naviBar.style.height = "7%";
         sidebar.style.top = "7%";
         sidebar.style.height = "93%";
-
-        console.log(burgerClick);
+        
     }
     
     else
@@ -121,6 +119,7 @@ function lessThan700px(x)
         slice[2].style.transform = "rotateZ(0deg)";
         setTimeout(resetBurger, 200);
 
-        console.log(burgerClick);
+        // console.log(burgerClick);
     }
 }
+
