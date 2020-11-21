@@ -55,7 +55,7 @@ function showPreview()
 function randomNyan()
 {
     var nyanList = ["sekanyan.png", "Doggo.png"];
-    var nyanDir = "url('img/sekanyan.png";
+    var nyanDir = "url('img/sekanyan.png)";
 
     var sekaNyan = document.getElementById("sekaNyan");
     var random = Math.floor((Math.random() * 4  ) + 1);
