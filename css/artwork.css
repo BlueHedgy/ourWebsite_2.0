@@ -1,3 +1,4 @@
+
 .naviMenu:nth-of-type(5)
 {
     box-shadow: 0 4px rgba(255, 255, 255, 1);
@@ -16,13 +17,13 @@
     top:20%
 }
 
-.profile:nth-of-type(1)
+.profile:nth-of-type(2)
 {
     left: 17%;
     background-image: url("../img/husbando.png");
     background-size: cover;
 }
-.profile:nth-of-type(2)
+.profile:nth-of-type(3)
 {
     right: 17%;
     background-image: url("../img/wifey.png");
